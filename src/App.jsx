@@ -2,6 +2,7 @@ import "./app.scss";
 import Dock from "./components/Dock";
 import Navbar from "./components/Navbar";
 import Github from "./components/windows/Github";
+import Note from "./components/windows/Note";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Dock />
         
         <Github />
+        <Note />
       </main>
     </>
   )
