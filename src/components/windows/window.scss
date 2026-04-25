@@ -57,4 +57,13 @@
   .main-content{
         height: 100%;
     }
+
+    *::-webkit-scrollbar{
+        width: 0.5rem;
+    }
+
+    *::-webkit-scrollbar-thumb{
+        background-color: rgba(168, 168, 168, 0.4);
+        border-radius: 0.4rem;
+    }
 }
