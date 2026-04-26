@@ -4,7 +4,7 @@ import "./resume.scss"
 
 const Resume = () => {
   return (
-    <MacWindow>
+    <MacWindow width='35vw'> 
         <div className="resume-window">
             <embed src="/resume.pdf" frameborder="0"></embed>
         </div>
