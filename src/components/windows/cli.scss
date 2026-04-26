@@ -1,0 +1,135 @@
+.cli-window {
+  height: 100%;
+  overflow: auto;
+  padding: 1.2rem;
+  padding-bottom: 10rem;
+  background: linear-gradient(135deg, #1b1b1d 0%, #22222a 50%, #13161f 100%);
+  font-family: "Courier New", "Monaco", "Consolas", monospace;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  position: relative;
+  div[name="react-console-emulator"] {
+    height: 100%;
+    background-color: transparent !important;
+    padding-top: 0.5rem; 
+    padding-bottom: 20rem;
+    /* Scrollbar styling */
+    &::-webkit-scrollbar {
+      width: 3px;
+      display: none;
+    }
+     /* All message styling */
+    .console-message {
+      margin: 0.4rem 0;
+      line-height: 1.7;
+      color: #a1efd3;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+      padding: 0.3rem 0.5rem;
+      border-radius: 2px; /* Gradient effect - left side blue, fades to transparent */
+      background: linear-gradient(
+        90deg,
+        rgba(97, 218, 251, 0.08) 0%,
+        rgba(161, 239, 211, 0.04) 50%,
+        transparent 100%
+      );
+    } /* Prompt line styling */
+    .console-prompt-line {
+      display: flex;
+      align-items: center;
+      margin: 0.8rem 0;
+      gap: 0.5rem;
+      padding: 0.4rem 0.5rem;
+      background: rgba(71, 241, 65, 0.02);
+      border-radius: 4px;
+      border-left: 2px solid rgba(71, 241, 65, 0.3);
+      .console-prompt-label {
+        color: #47f141;
+        font-weight: bold;
+        text-shadow: 0 0 8px rgba(71, 241, 65, 0.4);
+        min-width: max-content;
+        flex-shrink: 0;
+      }
+      .console-input {
+        color: #a1efd3 !important;
+        background-color: transparent !important;
+        border: none !important;
+        border-bottom: 1px solid rgba(97, 218, 251, 0.4);
+        font-family: "Courier New", monospace !important;
+        font-size: 0.95rem;
+        font-weight: 500;
+        line-height: 1.8 !important;
+        flex: 1;
+        outline: none;
+        padding: 0.3rem 0.9rem !important;
+        height: 1.8rem;
+        vertical-align: center;
+        transition: all 0.3s ease;
+        &::placeholder {
+          color: rgba(161, 239, 211, 0.3);
+        }
+        &:focus {
+          border-bottom-color: #61dafb;
+          box-shadow: 0 2px 8px rgba(71, 241, 65, 0.15) inset;
+          background: rgba(97, 218, 251, 0.03);
+        }
+      }
+    } /* Alternate line coloring for better readability */
+    .console-content {
+      div:nth-child(odd) {
+        background: linear-gradient(
+          90deg,
+          rgba(97, 218, 251, 0.05) 0%,
+          transparent 100%
+        );
+      }
+      div:nth-child(even) {
+        background: linear-gradient(
+          90deg,
+          rgba(161, 239, 211, 0.04) 0%,
+          transparent 100%
+        );
+      }
+    } /* Success messages in green */
+    .console-message:contains("Opening"),
+    .console-message:contains("download") {
+      color: #47f141;
+      border-left: 3px solid #47f141;
+      padding-left: 0.8rem;
+      background: rgba(71, 241, 65, 0.08) !important;
+    } /* Section headers in cyan */
+    .console-message:contains("╔"),
+    .console-message:contains("║"),
+    .console-message:contains("╚") {
+      color: #61dafb;
+      font-weight: bold;
+      text-shadow: 0 0 8px rgba(97, 218, 251, 0.3);
+      background: linear-gradient(
+        90deg,
+        rgba(97, 218, 251, 0.12) 0%,
+        transparent 100%
+      ) !important;
+    }
+  } /* Top accent line */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      #61dafb 25%,
+      #47f141 50%,
+      #61dafb 75%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+}
+
+input[name="react-console-emulator__input"] {
+  margin-top : 0.4rem !important;
+}
