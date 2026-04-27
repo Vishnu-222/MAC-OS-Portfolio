@@ -5,7 +5,7 @@ import TerminalLib from "react-console-emulator";
 const Terminal = TerminalLib.default;
 
 
-const Cli = () => {
+const Cli = ({ windowsName, setWindowsState }) => {
 
     const commands = {
         about: {
@@ -93,7 +93,7 @@ Try all available commands :
 Happy exploring! 🚀
 `
   return (
-    <MacWindow width='40vw' height='60vh'>
+    <MacWindow width='40vw' height='60vh' x ='800' y='180' windowsName={windowsName} setWindowsState={setWindowsState} >
       <div className="cli-window">
         <Terminal
           commands={commands}
