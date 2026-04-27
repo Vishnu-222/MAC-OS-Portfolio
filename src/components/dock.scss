@@ -28,7 +28,8 @@
   }
 
   .github,
-  .cli {
+  .cli , 
+  .chatgpt {
     background-color: black;
   }
 
@@ -61,6 +62,13 @@
     );
   }
 
+  .leetcode{
+    background: linear-gradient(45deg, #ffd84d, #ffb800, #ffa116);
+  }
+
+  .instagram{
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #f82785, rgb(255, 0, 234),  #b52aec);
+  }
   .icon:hover {
     transform: scale(1.25) translateY(-20%);
   }
