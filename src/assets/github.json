@@ -1,30 +1,39 @@
 [
   {
     "id": 1,
-    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1000",
-    "title": "Home Budget & Expense Tracker",
-    "description": "A React-based expense tracking application that helps users manage their budget efficiently. Users can create a budget, add expenses, and visualize their spending to maintain financial control.",
+    "image": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&q=80&w=1000",
+    "title": "ConvoX - Real-Time Messaging App",
+    "description": "A full-stack one-to-one messaging application featuring JWT authentication, real-time message delivery, online/offline presence, and image sharing. Includes REST APIs for messaging and contact management, rate limiting, input validation, and automated welcome emails.",
     "tags": [
       "React",
-      "JavaScript",
-      "React Router",
-      "CSS", 
-      "React Toastify"
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "Zustand",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Resend"
     ],
-    "repoLink": "https://github.com/Vishnu-222/Home_Budget_Expenses_Tracker",
-    "demoLink": "https://home-budget-expenses-tracker.vercel.app/"
+    "repoLink": "https://github.com/Vishnu-222/ConvoX",
+    "demoLink": "https://convox-hvn5.onrender.com/"
   },
   {
-  "id": 2,
-  "image": "https://images.unsplash.com/photo-1501973801540-537f08ccae7b?auto=format&fit=crop&q=80&w=1000",
-  "title": "Weather App",
-  "description": "A responsive weather application that provides real-time weather updates for any location. It fetches live weather data from an external API and displays key information like temperature, humidity, and weather conditions with a clean user interface.",
-  "tags": [
-    "JavaScript",
-    "API Integration",
-    "CSS"
-  ],
-  "repoLink": "https://github.com/Vishnu-222/Weather-App",
-  "demoLink": "https://weatherlyx.vercel.app/"
-}
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000",
+    "title": "ResumeIQ - AI Resume Analysis",
+    "description": "A full-stack AI-powered career platform built with the MERN stack and Google Gemini API. Analyzes resumes, identifies skill gaps, and provides job-targeted career recommendations and interview preparation insights.",
+    "tags": [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Google Gemini API",
+      "SCSS",
+      "Context API",
+      "Puppeteer"
+    ],
+    "repoLink": "https://github.com/Vishnu-222/ResumeIQ",
+    "demoLink": "https://resume-iq-wheat-phi.vercel.app/"
+  }
 ]
