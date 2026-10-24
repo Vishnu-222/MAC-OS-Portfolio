@@ -1,7 +1,8 @@
 /**
  * @file: profile.config.ts
  * @author: Vishnu Singh
- * @summary: Frontend-focused developer transitioning into MERN stack.
+ * @summary: Software Engineer building full-stack applications
+ *            and exploring AI-powered solutions.
  */
 
 // --------------------------------------------------
@@ -9,19 +10,35 @@
 // --------------------------------------------------
 
 const TECH_STACK = {
+  languages: [
+    "Java",
+    "JavaScript (ES6+)",
+    "TypeScript"
+  ],
   frontend: [
     "React.js",      // Strong
-    "JavaScript",    // Strong
     "SCSS",          // Strong
     "HTML5/CSS3",    // Strong
-    "TailwindCSS",   // Intermediate
+    "TailwindCSS",   // Strong
   ],
   backend: [
     "Node.js",       // Intermediate
-    "Express.js",    // Intermediate
-    "MongoDB",       // Intermediate
+    "Express.js",    // Strong
+    "REST APIs",     // Strong
+    "Socket.IO",     // Intermediate
   ],
-  tools: ["Git", "GitHub", "Vercel", "Linux"]
+  databases: [
+    "MongoDB",       // Intermediate
+    "MySQL",         // Strong
+    "Redis",         // Intermediate
+    "Elasticsearch"  // Intermediate
+  ],
+  tools: ["Git", "GitHub", "Render", "Vercel", "MongoDB Atlas", "Linux"],
+  interests: [
+    "Generative AI",
+    "Application Observability",
+    "Problem Solving"
+  ]
 };
 
 // --------------------------------------------------
@@ -38,14 +55,24 @@ class ProfessionalHistory {
 
     // Key Contributions
     const work = [
-      "Developed UI for enterprise dashboards (real-time monitoring)",
-      "Built reusable React components for faster development",
-      "Optimized legacy code for performance and maintainability",
-      "Worked with dynamic data visualization & configurations",
-      "Collaborated across teams to deliver UI features"
+      "Contributed to the UI team of NetDiagnostics, an enterprise network monitoring product",
+      "Built and maintained reusable React components for real-time monitoring dashboards",
+      "Integrated REST APIs and modified Node.js endpoints and application logic",
+      "Worked with Elasticsearch queries and aggregations for diagnostic reports",
+      "Supported OpenTelemetry instrumentation and investigated logs, metrics, and traces",
+      "Debugged frontend-backend integration issues and transformed API data"
     ];
 
-    const tools = ["React", "JavaScript", "Git", "Linux"];
+    const tools = [
+    "React.js",
+    "JavaScript",
+    "Node.js",
+    "Express.js"
+    "Elasticsearch",
+    "OpenTelemetry",
+    "Git",
+    "Linux"
+    ];
 
     return;
   }
@@ -58,10 +85,11 @@ class ProfessionalHistory {
     this.role = "Web Development Intern";
 
     this.focus = [
-      "Worked with HTML, CSS, JavaScript",
-      "Learned component-based development",
-      "Practiced debugging UI issues",
-      "Used AI tools to improve productivity"
+      "Built responsive interfaces using HTML, CSS, JavaScript, and React",
+      "Developed reusable components and creative UI layouts",
+      "Contributed to UI/UX discussions and frontend implementation",
+      "Created animations and polished user-facing experiences",
+      "Used AI-assisted tools to support development productivity"
     ];
   }
 }
@@ -79,19 +107,19 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "MacOS Portfolio",
-    stack: "React",
-    highlight: "Interactive desktop UI with draggable windows & CLI"
+    name: "ConvoX",
+    stack: "MERN + Socket.IO",
+    highlight: "Real-time one-to-one messaging with JWT authentication, online presence, image sharing, and instant message delivery"
   },
   {
-    name: "Expense Tracker",
-    stack: "React",
-    highlight: "Budget and expense management with toast notifications"
+    name: "ResumeIQ",
+    stack: "MERN + Generative AI (Google Gemini API)",
+    highlight: "AI-powered resume analysis, skill-gap identification, job-targeted career recommendations, and interview preparation insights"
   },
   {
-    name: "Weather App",
-    stack: "JavaScript + API",
-    highlight: "Real-time weather data using API integration"
+    name: "Home Budget & Expense Tracker",
+    stack: "React" , "React-Router" , "JavaScript",
+    highlight: "Budget and expense management and tracking with UI visualization to maintian financial control"
   }
 ];
 
@@ -100,11 +128,19 @@ const projects: Project[] = [
 // --------------------------------------------------
 
 const learning = [
-  "Building full-stack apps using MERN stack",
-  "Understanding backend architecture",
+  "Building and deploying full-stack MERN applications",
+  "Strengthening backend engineering and architecture with better API and system design",
   "Improving problem solving with DSA (Java)",
-  "Exploring system design fundamentals"
+  "Exploring Generative AI and practical AI integrations",
+  "Continuously improving software engineering fundamentals"
 ];
+
+const problemSolving = {
+  platform: "LeetCode",
+  language: "Java",
+  problemsSolved: "250+",
+  dailyStreak: "150+ days"
+};
 
 
 // --------------------------------------------------
@@ -123,7 +159,8 @@ export default new ProfessionalHistory();
 # ---------------------------------------
 $ user --status
 > Status: Open to Opportunities
-> Role: Frontend / MERN Developer
+> Focus : React, Node.js, Express , Backend APIs & AI , Databases
+> Role: Software Engineer | Full-Stack Developer
 > Location: Global / Remote
 > Loading Assets... [||||||||||] 100%
 > Ready.
